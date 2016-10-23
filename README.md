@@ -9,5 +9,8 @@ Adapted from [Brunch with Elm](https://github.com/alaister/brunch-with-elm)
     * `npm install`
     * `elm package install`
     
-* Run
+* Run in browser
     * `npm start`
+    
+* Run as Electron app
+    * `electron main.js`
