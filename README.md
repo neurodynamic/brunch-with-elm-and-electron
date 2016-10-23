@@ -13,4 +13,4 @@ Adapted from [Brunch with Elm](https://github.com/alaister/brunch-with-elm)
     * `npm start`
     
 * Run as Electron app
-    * `electron main.js`
+    * `npm run electron`

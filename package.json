@@ -5,6 +5,7 @@
   "main": "brunch-config.js",
   "scripts": {
     "postinstall": "elm package install -y",
+    "electron": "brunch watch --server & electron main.js",
     "start": "brunch watch --server",
     "prod": "brunch build --production"
   },
