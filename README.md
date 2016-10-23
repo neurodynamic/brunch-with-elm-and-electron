@@ -5,6 +5,9 @@ Adapted from [Brunch with Elm](https://github.com/alaister/brunch-with-elm)
 
 ## Getting Started
 
+* Build new Brunch project
+    * `brunch new project_name -s neurodynamic/electron_elm_brunch_boilerplate`
+
 * Install
     * `npm install`
     * `elm package install`
