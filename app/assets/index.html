@@ -8,6 +8,15 @@
 
   <body>
     
+    <!-- Make Electron require.register work as per directions at:
+    https://github.com/brunch/brunch/issues/1208#issuecomment-189703586 -->
+    <script>
+      window.nodeRequire = require;
+      delete window.require;
+      delete window.exports;
+      delete window.module;
+    </script>
+
     <!-- Require Elm Code & Regular JS -->
     <script src="js/main.js"></script>
     <script src="js/app.js"></script>
