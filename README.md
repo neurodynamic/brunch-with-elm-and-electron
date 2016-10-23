@@ -1,5 +1,5 @@
-# Brunch With Elm
-Brunch With Elm & Sass
+# Brunch With Elm (and Electron!)
+Brunch With Elm & Sass & Electron
 
 ## Getting Started
 
