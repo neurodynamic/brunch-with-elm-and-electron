@@ -2,4 +2,4 @@ node_modules
 public
 elm-stuff
 .DS_Store
-**/elm-package.json
+*/**/elm-package.json
