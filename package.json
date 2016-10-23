@@ -5,7 +5,8 @@
   "main": "brunch-config.js",
   "scripts": {
     "postinstall": "elm package install -y",
-    "electron": "brunch watch --server & electron main.js",
+    "electron": "npm-run-all -p -r start electron-start",
+    "electron-start": "electron main.js",
     "start": "brunch watch --server",
     "prod": "brunch build --production"
   },
@@ -16,7 +17,9 @@
   ],
   "author": "Alaister Young <a@alaisteryoung.com>",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "npm-run-all": "^3.1.1"
+  },
   "devDependencies": {
     "auto-reload-brunch": "^2.7.1",
     "brunch": "^2.8.2",
