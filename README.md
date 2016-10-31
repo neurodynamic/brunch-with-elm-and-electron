@@ -17,3 +17,7 @@ Adapted from [Brunch with Elm](https://github.com/alaister/brunch-with-elm)
     
 * Run as Electron app
     * `npm run electron`
+
+## Note
+
+You may see a "WebSocket connection failed" error on starting electron. This does not seem to affect the app in any way, and goes away after the first hot-reload.
