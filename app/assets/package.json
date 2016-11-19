@@ -1,0 +1,15 @@
+{
+  "name": "elm-and-electron",
+  "version": "1.0.0",
+  "description": "Elm and Electron",
+  "main": "main.js",
+  "keywords": [
+    "elm",
+    "brunch",
+    "electron"
+  ],
+  "author": "Mark Stewart <neurodynamicdev@gmail.com>",
+  "dependencies": {
+    "glob": "^7.1.1"
+  }
+}

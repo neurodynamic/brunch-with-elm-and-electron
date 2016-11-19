@@ -1,14 +1,14 @@
 {
-  "name": "brunch-with-elm",
-  "version": "1.0.0",
-  "description": "Brunch With Elm",
+  "name": "brunch-with-elm-and-electron",
+  "version": "2.0.0",
+  "description": "Brunch with Elm and Electron",
   "main": "brunch-config.js",
   "scripts": {
     "postinstall": "elm package install -y",
     "electron": "npm-run-all -p -r start electron-start",
-    "electron-start": "electron main.js",
+    "electron-start": "NODE_ENV='development' electron public/main.js",
     "start": "brunch watch --server",
-    "prod": "brunch build --production"
+    "prod": "brunch build --production && cd public && npm install"
   },
   "keywords": [
     "elm",
@@ -18,13 +18,16 @@
   "author": "Alaister Young <a@alaisteryoung.com>",
   "license": "ISC",
   "dependencies": {
-    "npm-run-all": "^3.1.1"
+    "glob": "^7.1.1"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.7.1",
     "brunch": "^2.8.2",
-    "hmr-brunch": "^0.1.1",
+    "electron": "^1.4.5",
+    "electron-packager": "^8.2.0",
     "elm-brunch": "^0.7.0",
-    "sass-brunch": "^2.6.3"
+    "hmr-brunch": "^0.1.1",
+    "sass-brunch": "^2.6.3",
+    "npm-run-all": "^3.1.1"
   }
 }

@@ -1,5 +1,16 @@
 'use strict'
+const path = require('path')
+const glob = require('glob')
 const electron = require('electron')
+
+function inDevelopmentMode () {
+  return process.env.NODE_ENV == "development"
+}
+
+let files = glob.sync(path.join(__dirname, 'main-process/**/*.js'))
+files.forEach(function (file) {
+  require(file)
+})
 
 const app = electron.app // this is our app
 const BrowserWindow = electron.BrowserWindow // This is a Module that creates windows  
@@ -10,16 +21,26 @@ app.on('ready', createWindow) // called when electron has initialized
 
 // This will create our app window, no surprise there
 function createWindow () {
+  let startWidth
+  
+  if (inDevelopmentMode()) {
+    startWidth = 800
+  } else {
+    startWidth = 600
+  }
+  
   mainWindow = new BrowserWindow({
-    width: 1024, 
-    height: 768
+    width: startWidth, 
+    height: 490
   })
 
   // display the index.html file
-  mainWindow.loadURL(`file://${ __dirname }/public/index.html`)
+  mainWindow.loadURL(`file://${ __dirname }/index.html`)
 
   // open dev tools by default so we can see any console errors
-  mainWindow.webContents.openDevTools()
+  if (inDevelopmentMode()) {
+    mainWindow.webContents.openDevTools()
+  }
 
   mainWindow.on('closed', function () {
     mainWindow = null

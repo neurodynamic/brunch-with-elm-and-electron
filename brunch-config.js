@@ -1,20 +1,22 @@
 module.exports = {
   config: {
+    // hot: true,
     paths: {
       watched: ["app"]
     },
     files: {
       javascripts: {
-        joinTo: "js/app.js"
+        joinTo: "renderer-process/app.js"
       },
       stylesheets: {
-        joinTo: "css/app.css"
+        joinTo: "renderer-process/app.css"
       }
     },
     plugins: {
       elmBrunch: {
-        mainModules: ["app/elm/Main.elm"],
-        outputFolder: "public/js/"
+        mainModules: ["app/elm_components/Main.elm"],
+        outputFolder: "public/renderer-process/",
+        // makeParameters : ['--debug']
       },
       sass: {
         mode: "native"
