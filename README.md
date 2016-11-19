@@ -26,6 +26,7 @@ Updated for Elm 0.18, populated with file saving and loading example code to dem
     - `sudo npm install -g electron`
 
 * Package for Mac
+    - `npm run prod`
     - `electron-packager public "Name of App" --platform=darwin`
 
 ## Note
