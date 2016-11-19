@@ -22,11 +22,11 @@ Updated for Elm 0.18, populated with file saving and loading example code to dem
     * `npm run electron`
 
 * Upgrade Electron version
-- `rm -rf ~/.electron`
-- `sudo npm install -g electron`
+    - `rm -rf ~/.electron`
+    - `sudo npm install -g electron`
 
 * Package for Mac
-- `electron-packager public "Name of App" --platform=darwin`
+    - `electron-packager public "Name of App" --platform=darwin`
 
 ## Note
 You may see a "WebSocket connection failed" error on starting electron. This does not seem to affect the app in any way, and goes away after the first hot-reload.
