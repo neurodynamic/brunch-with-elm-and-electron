@@ -15,7 +15,7 @@
     "brunch",
     "sass"
   ],
-  "author": "Alaister Young <a@alaisteryoung.com>",
+  "author": "Neurodynamic <neurodynamicdev@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "glob": "^7.1.1"
