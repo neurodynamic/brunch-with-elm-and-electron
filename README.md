@@ -31,4 +31,4 @@ Updated for Elm 0.18, populated with file saving and loading example code to dem
 
 ## Notes
 - You may see a "WebSocket connection failed" error on starting electron. This does not seem to affect the app in any way, and goes away after the first live reload.
-- Be aware, Brunch has one current issue with Elm compilation that sometimes effects live reloading: https://github.com/brunch/brunch/issues/1573
+- Currently uses [this fork of elm-brunch](https://github.com/stelmakh/elm-brunch) due to a compilation issue with the main elm-brunch repo. Should be able to switch back to the main elm-brunch repo once [this pull request](https://github.com/madsflensted/elm-brunch/pull/30) is merged.
