@@ -8,7 +8,7 @@
     "brunch",
     "electron"
   ],
-  "author": "Mark Stewart <neurodynamicdev@gmail.com>",
+  "author": "Neurodynamic",
   "dependencies": {
     "glob": "^7.1.1"
   }
